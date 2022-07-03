@@ -1,9 +1,16 @@
 import { createRouter, createWebHistory } from "vue-router";
+import HeaderComponent from "../components/HeaderComponent.vue";
 
-const routes = [];
+const routes = [
+  {
+    path: "/",
+    name: "HeaderComponent",
+    component: HeaderComponent,
+  },
+];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(),
   routes,
 });
 
